@@ -307,7 +307,8 @@ const ChatInterface = () => {
 // --- MAIN ROUTER ---
 export default function App() {
   return (
-    <Router>
+    // The basename ensures the router handles the subfolder path on GitHub Pages
+    <Router basename="/aura-web">
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/auth" element={<AuthPage />} />
